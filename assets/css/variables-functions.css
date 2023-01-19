@@ -1,0 +1,49 @@
+html{
+    --color:green;
+}
+
+.title-custom{
+    --color:green;
+    --bg-color-skyblue:skyblue;
+    color: var(--color);
+    background-color: var(--bg-color-skyblue);
+;
+}
+
+
+.custom-propts-1{
+    --border:red;
+    --bg-color-skyblue:skyblue;
+    background-color: var(--bg-color-skyblue);
+}
+
+.custom-propts-2{
+  padding: 1rem;
+  border: 2px solid var(--border);
+}
+
+.custom-propts-3{
+    --font-size:32px;
+    border: 2px solid var(--border);
+    
+    font-size: var(--font-size);
+ 
+}
+
+.listas-function{
+color: var(--color);
+}
+
+.ch-10{
+    --padding-size: 3ch;
+    --num-ch: 10ch;
+    font-size: 2rem;
+    padding: var(--padding-size);
+    width: calc(var(--padding-size) + var(--num-ch) * 2);
+    background-color:darkgoldenrod;
+    
+}
+
+h1 {
+    font-size:clamp(2rem, 1rem + 3vw,3rem);
+}

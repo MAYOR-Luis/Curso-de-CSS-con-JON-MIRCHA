@@ -1,0 +1,233 @@
+/* @import url(otra-oja.css); */
+h1{
+    background-color:black;
+    color:skyblue;
+    border: 2px solid greenyellow;
+    text-align: center;
+    font-size: 35px;
+
+
+}
+p{
+    color: midnightblue;
+}
+.parrafo-dos{
+    background-color:azure;
+}
+.text-32{
+    font-size:32px;
+}
+.text-32{
+    background-color:skyblue;
+}
+.text-20{
+    font-size:20px;
+}
+.bg-steelblue{
+    background-color: steelblue;
+}
+.text-white{
+    color: white;
+}
+
+.hijos-descendientes>li{
+    background-color:thistle;
+}
+
+.hijos-directos b {
+    background-color:thistle;
+}
+
+.hermanos-general ~li{
+    background-color: thistle;
+}
+
+.hermanos-adyacentes + li{
+    background-color: coral;
+}
+
+/* Selectores de atributos */
+.selectores-atributos a[href] {
+    color:greenyellow;
+}
+.selectores-atributos a[target="_blank"] {
+    font-weight: bold;
+}
+
+/* El comodín del * aplica el estilo si contiene el texto en cuestión 
+en cualquier parte */
+.selectores-atributos a[href*="jonmircha"] {
+    font-size:30px;
+}
+/* El comodín del ^ aplica el estilo si contiene el texto en cuestión 
+al inicio */
+.selectores-atributos a[href^="http://"] {
+    text-decoration: none;
+}
+
+/* El comodín del $ aplica el estilo si contiene el texto en cuestión 
+al final */
+
+.selectores-atributos a[href$=".com"] {
+    background-color: black;
+}
+.selectores-atributos a[href^="mailto:"] {
+    background-color:white;
+}
+/* El comodín del ~ aplica el estilo si contiene el texto en cuestión 
+en una lista separada por espacios */
+.selectores-atributos a[class~="cursos"] {
+    background-color: midnightblue;
+}
+/* El comodín del | aplica el estilo si contiene el texto en cuestión 
+en una lista separada por espacios y que despues del texto en cuestión 
+venga un guión medio- */
+.selectores-atributos a[class|="menu"] {
+    font-style: italic;
+}
+
+/* Selector Universal */
+* {
+    font-family:sans-serif;
+   
+}
+
+.selector-universal *{
+    font-size: 24px;
+}
+ 
+/* Pseudoclases-Dan estilos dependiendo del contexto-posición o estado del elemnto */
+
+/* .form-pseudoclases *:required {
+    border-color:blue;
+} */
+
+/* .form-pseudoclases *:valid {
+    border-color:green;
+} */
+
+.form-pseudoclases *:invalid {
+    border-color:red;
+}
+.form-pseudoclases *:focus {
+    background-color:skyblue;
+}
+.form-pseudoclases *:disabled {
+    background-color:thistle;
+}
+.menu-pseudoclases a:visited{
+    color: tomato;
+}
+.menu-pseudoclases a:hover{
+    color:aqua;
+}
+.p-pseudoclases {
+    font-size: 6px;
+}
+.p-pseudoclases:hover{
+    font-size:20px;
+    background-color:rgb(207, 196, 196);
+    color: white;
+    font-weight:bold;
+}
+
+#temario-css:target {
+    background-color: lightgreen;
+}
+
+.lista-pseudoclase li:first-child {
+    color: green;
+}
+.lista-pseudoclase li:last-child {
+    color: red;
+}
+.lista-pseudoclase li:nth-child(10) {
+    color: navy;
+}
+.lista-pseudoclase li:nth-child(4n) {
+    font-size:20px;
+}
+.lista-pseudoclase li:nth-child(3n + 1) {
+    font-weight:bold;
+    background-color:pink ;
+}
+.lista-pseudoclase li:nth-child(even) { /* en par */
+    background-color: yellow;
+}
+.lista-pseudoclase li:nth-child(odd) { /* en impar */
+    background-color: orange;
+}
+.articulo-pseudoclase p:first-of-type {
+    background-color: pink;
+}
+.articulo-pseudoclase p:last-of-type {
+    background-color: gray;
+}
+.articulo-pseudoclase p:nth-of-type(3) {
+    background-color: fuchsia;
+}
+
+.articulo-pseudoclase *:not(p){
+    background-color: beige;
+}
+
+
+
+.saga-geminis::before {
+    content:"🤼";
+}
+.saga-geminis::after {
+    content:"♎";
+}
+.saga-precio::before {
+    content:"$";
+    font-weight: bold;
+}
+.saga-precio::after {
+    content:"USD";
+    font-weight: bold;
+}
+
+.p-pseudoelementos::first-letter{
+    font-weight:bold;
+    font-size:32px;
+}
+.p-pseudoelementos::first-line{
+    color:coral;
+}
+.p-pseudoelementos::selection{
+    color:greenyellow;
+    background-color: black;
+}
+
+.input-pseudoelementos::placeholder{
+    color: skyblue;
+}
+
+/* Agrupar Selectores */
+
+.form-agrupar-selectores input[type="text"] ,
+.form-agrupar-selectores input[type="email"] ,
+.form-agrupar-selectores textarea {
+    color:yellow;
+    background-color: black;
+    border-color: yellow;
+    border-width:2px;
+    border-style: dashed;
+    font-size: 20px;
+    width: 300px;
+    display: block;
+}
+
+.cita-marco {
+    background-color: orange;
+    font-size: 32px;
+    border-style: dashed;
+    border-color:red;
+}
+.cita-marco cite {
+    border-style: inherit;
+    border-color:inherit;
+    font-size: 24px;
+    font-size: initial;
+}

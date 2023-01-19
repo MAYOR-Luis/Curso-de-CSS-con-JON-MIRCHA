@@ -1,0 +1,209 @@
+/* 
+Modelo de Caja: Es la forma en que CSS ve a los elementos en HTML y ¿CÓMO 
+LAS VE? como si fueran cajas con las siguientes propiedades:
+1. El contenido (content): El contenido (textO)del elemento HTML tomando en 
+   cuenta sus dimensiones (width & height)
+2.El borde (border):Lo que delimita cada uno de los elementos HTML
+3.El relleno (padding):Son las distancias internas (Las distancia del borde al
+  contenido)
+4.El márgen (margin):Son las distancias externas (La distancia entre el elemento
+  html y sus elementos hermanos o padres).
+  
+  Dentro del modelo de caja hay que considerar que una caja tendra 4 lados:
+
+  1._ Arriba (top)
+  2._ Derecha (right)
+  3._ Abajo (bottom)
+  4._ Izquierda (left)
+
+
+*/
+h1 {
+    width:250px;
+    height:50pxs;
+    border-width:3px;
+    border-style:solid;
+    padding: 10px;
+    border-color: tomato;
+    border-top-color:blue ;
+    border-bottom-color:blue ;
+    border-right-width:7px;
+    border-left-width:7px;
+    border-top-width:7px;
+    border-bottom-width:7px;
+    background-color: rgb(236, 236, 236);
+ 
+
+}
+
+.caja-uno,
+.caja-dos{
+    background-color: chocolate;
+    margin: 50px 30px 50px 30px;
+    padding:0 30px 20px;
+    border: medium;
+    border-color: orange;
+    border-style:solid;
+}
+
+.caja-linea,
+.caja-bloque{
+    background-color: cornflowerblue;
+    color: white;
+    border: 3px;
+    border-style:solid;
+    border-color: black;
+    margin:20px;
+    height:250px;
+    width: 500px;
+    padding:16px;
+    font-size:25px;
+}
+
+.caja-linea{
+    margin:48px;
+}
+
+.caja-bloque{
+    margin:32px;
+}
+
+.caja-none,
+.caja-linea-bloque,
+.caja-hidden{
+    background-color:darkolivegreen ;
+    color: white;
+    border: medium solid black;
+    width:600px;
+    height:300px;
+}
+.caja-linea-bloque{
+    display: inline-block;
+}
+.caja-none{
+    display: none;
+}
+.caja-hidden{
+    visibility: hidden;
+}
+.overflow{
+    background-color: cornflowerblue;
+    margin:20px;
+    padding: 10px;
+    border: medium solid black;
+    width: 200px;
+    height:100px;
+    overflow:auto;
+}
+
+.container-floats{
+    background-color: cadetblue;
+}
+
+.float-left{
+    float: left;
+}
+
+.float-right{
+    float:right;
+}
+
+.clearfix{
+    clear:both;
+}
+
+.margen-collapse{
+    background-color:skyblue;
+}
+
+.margen-collapse section{
+    border:thin solid black;
+    margin-top:16px ;
+    margin-bottom: 16px;
+}
+.margen-collapse span{
+    display: inline-block;
+    border:thin solid black;
+    margin-right: 16px;
+    margin-left: 16px;
+
+}
+
+.margen-collapse-centro{
+    text-align: center;
+    padding:10px;
+
+}
+
+.margen-collapse-centro span{
+    border:5px solid black;
+    margin:10px;
+    padding: 10px;
+    margin-right: 100px;
+    margin-left: 30px;
+    width: 120px;
+    height: 20px;
+}
+
+.three-lineas-diferentes{
+    background-color: skyblue;
+}
+
+.three-lineas-diferentes section{
+    border:thin solid black;
+    margin-top:16px ;
+    margin-bottom: 16px;
+    height:95px;
+}
+
+.three-lineas-diferentes span{
+    border: 5px solid black;
+    margin: 10px;    
+    padding: 10px;
+    margin-right: 85px;
+    margin-left: 45px;
+    margin-top: 22px;
+    display: inline-block;
+    text-align: center;
+    width: 120px;
+    height: 20px;
+}
+
+.span1{
+    background-color: green;
+    color: black;
+    
+}
+
+.span2{
+    background-color: yellow;
+    color:black;
+}
+
+.span3{
+    background-color: blue;
+    color: white;
+}
+
+/* CENTRADO DE CAJAS */
+
+.sitio-web{
+    background-color: thistle;
+    border: thin solid black;
+    width: 800px;
+    height: 1000px;
+    padding: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.border-radius{
+    width: 400px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+    background-color: blue;
+    border-radius: 50%;
+    border: 1px solid red;
+}

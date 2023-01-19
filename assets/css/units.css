@@ -1,0 +1,23 @@
+h1{
+    border: medium dashed red;
+    display: inline-block;
+    width: 258w;
+    padding: 5px;
+    margin-top: 10px;
+    margin-left: 500px;
+    font-size: 5vh;
+    
+    
+}
+
+.height-parent{
+    background-color: tomato;
+    width: 500px;
+    height: 500px;
+}
+
+.height-child{
+    background-color: aquamarine;
+    width: 50%;
+    height: 50%;
+}

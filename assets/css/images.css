@@ -1,0 +1,25 @@
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.card{
+    width: 280px;
+    height: 350px;
+    border: 2px solid black;
+    background-color: beige;
+}
+
+.card div{
+    text-align: center;
+    
+}
+
+.title-card{
+    font-weight: 900;
+}
+
+.enlace-card{
+    color: red;
+    
+}

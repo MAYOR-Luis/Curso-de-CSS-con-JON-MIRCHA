@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es" class="dark-mod">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/visual-effects.css">
+    <title>Efectos Visuales en CSS</title>
+</head>
+<body>
+    <h1>Efectos Visuales en CSS</h1>
+    <div class="box shadows">
+        <p>
+            Sombras
+        </p>
+    </div>
+    <div class="box shadows-multiple">
+        <p>
+            Sombras
+        </p>
+    </div>
+    <div class="box drop-shadows">
+        <img src="img/arbol.png" alt="">
+    </div>
+    <hr>
+    <h2>Degradados</h2>
+    <h3>lineal</h3>
+    <div class="box lineal-gradient peru"></div>
+    <div class="box lineal-gradient venezuela"></div>
+    <div class="box lineal-gradient argentina"></div>
+    <div class="box lineal-gradient brasil"></div>
+    <div class="box lineal-gradient bolivia"></div>
+
+  <h3>Radial</h3>
+  <div class="box radial-gradient cmyk"></div>
+  <div class="box radial-gradient ellipse"></div>
+  <div class="box radial-gradient japon"></div>
+    
+    <h3>Cónico</h3>
+    <div class="box conico-gradient-1"></div>
+    <div class="box conico-gradient-2"></div>
+
+    <h3>Repetir Degradados</h3>
+   <div class="box repeat-gradient linear"></div>
+   <div class="box repeat-gradient radial"></div>
+   <div class="box repeat-gradient conic"></div>
+
+  <h3>Graficas con Degradados</h3>
+  <div class="box chart-gradient"></div>
+  <div class="box donut-gradient"></div>
+  <hr>
+  <h2>Filtros</h2>
+  <h3>Filtros</h3>
+  <div class="card">
+      <img  class="filter" src="img/tailandia.jpg" alt="imagen dtailandia">
+  </div>
+  
+  <h3>Filtros Múltiples</h3>
+  <div class="card ">
+      <img  class="filters-multiple" src="img/tailandia.jpg" alt="imagen de tailandia">
+  </div>
+  
+  <h3>Filtros a Fondos</h3>
+  <article class="card relative">
+      <img src="img/tailandia.jpg" alt="imagen de tailandia">
+      <div class="backdrop-filter">
+          <h4>Puesta del sol</h4>
+      </div>
+  </article>
+  <h3>Filtros Múltiples a Fondos</h3>
+  <article class="card relative">
+      <img src="img/tailandia.jpg" alt="imagen de tailandia">
+      <div class="backdrop-filter-multiple">
+          <h4>Puesta del Sol</h4>
+      </div>
+  </article>
+  <hr>
+        <h2>Modos de Mezcla</h2>
+     <h3>sobre imágenes (img)</h3>
+     <article class="card relative blend-modes ">
+            <img src="img/tailandia.jpg" alt="imagen de tailandia">
+         <img class="absolute" src="img/WIN_20220528_22_24_12_Pro.jpg" alt="luis y norma">
+      </article>
+
+    <h3>Sobre imágenes de fondo(background-image)</h3>
+     <article class="card bg-blend-modes"></article>
+     <hr>
+     <h2>Mascaras</h2>
+     <article class="card clip-path">
+         <img src="img/FORD.png" alt="camioneta Ford">
+        </article>
+     <hr>
+     <h2>Formas</h2>
+    <article class="shapes">
+      <h3>Ejemplos de Formas y siluetas entre textos e imágenes</h3>
+       <img class="float-left shape-1" src="img/futuros - copia.jpg" alt="carreterademontañas" >
+       <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima officia perspiciatis iste commodi voluptatum dicta modi, ipsum suscipit consequuntur dolore aut tempora amet perferendis minus dolorem! Quidem earum quisquam fugiat.
+       </p>
+       <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore magnam quia veniam eum quibusdam rem. Aperiam corporis vero temporibus quisquam veritatis repudiandae excepturi non omnis soluta voluptas? Placeat, veniam neque.
+       </p>
+       <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat omnis itaque asperiores. Voluptate, quidem eaque. Dolorum perferendis, laudantium deleniti quos officia nulla alias commodi amet sunt accusantium error enim minima.
+       </p>
+       <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, recusandae, ipsum quia nemo ut nulla, quo quis veritatis maiores doloribus sapiente. Cupiditate, iste similique fugiat recusandae commodi soluta! Nobis, dicta.
+       </p>
+       <img class="float-right shape-2" src="img/futuros - copia.jpg" alt="carreterademontañas">
+       <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil consequuntur veritatis obcaecati ipsam beatae eveniet dolorem, deleniti, ad soluta rerum earum sed. Esse vero iusto neque corrupti numquam, quaerat eveniet?
+       </p>
+       <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium alias cum, nesciunt corporis dolor repellat soluta incidunt, dolore, accusantium fuga quaerat maiores libero. Quis, eius ut! Deserunt nobis ipsam et?
+       </p>
+       <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non veniam possimus molestiae officiis? Ex consequuntur veritatis, explicabo quo esse maiores expedita facilis, inventore corporis eius et. Culpa quidem aliquid dolorum!
+       </p>
+       <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed dolorem repellendus neque odio maiores eligendi pariatur repellat perferendis iure, ab provident rem voluptates quia. Ipsa illum assumenda porro possimus autem!
+       </p>
+       <img class="float-left shape-3" src="img/futuros - copia.jpg" 
+       alt="carreterademontañas">
+       <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil consequuntur veritatis obcaecati ipsam beatae eveniet dolorem, deleniti, ad soluta rerum earum sed. Esse vero iusto neque corrupti numquam, quaerat eveniet?
+       </p>
+       <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium alias cum, nesciunt corporis dolor repellat soluta incidunt, dolore, accusantium fuga quaerat maiores libero. Quis, eius ut! Deserunt nobis ipsam et?
+       </p>
+       <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non veniam possimus molestiae officiis? Ex consequuntur veritatis, explicabo quo esse maiores expedita facilis, inventore corporis eius et. Culpa quidem aliquid dolorum!
+       </p>
+       <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed dolorem repellendus neque odio maiores eligendi pariatur repellat perferendis iure, ab provident rem voluptates quia. Ipsa illum assumenda porro possimus autem!
+       </p>
+    </article>
+        
+    <br><br><br><br><br><br><br><br><br><br>
+    <a href="index2.html#temario-css">☝️Regresar a la pagina principal</a>
+        <br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
